@@ -1,0 +1,238 @@
+@charset "UTF-8";
+@font-face {
+    font-family:"Druk";
+    src: url("fonts/DrukWide-Medium.ttf") format("truetype");
+    
+}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+
+html {
+    height: 100%;
+    min-height: 100;
+}
+
+:root {
+    --cor001: #049DBF;
+    --cor002: #adadad8a;
+    --cor003: lightgray;
+    --fonte1: "Druk";
+    --fonte2: "Open Sans";
+}
+
+header {
+    font-family:var(--fonte1);
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 20px 10px 10px 10px;
+    margin: 0px;
+}
+
+header > h1 {
+    font-size: 50px;
+    margin: 0px;
+
+}
+
+span {
+    color: var(--cor001);
+}
+
+nav {
+    font-family: var(--fonte2);
+    font-weight: bold;
+    color: white;
+    padding: 20px 0px 0px 10px;
+    font-size: 20px;
+    text-align: left;
+    width: 100%;
+}
+
+nav > a {
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+    font-weight: normal;
+    padding: 10px 10px 10px 10px;
+    transition-duration: 0.3s;
+    min-width: 320px;
+    max-width: 1500px;
+}
+
+nav > a:hover {
+    background-color: #adadad8a;
+    padding-left: 10px;
+}
+
+li > a {
+    text-decoration: none;
+    color: var(--cor001);
+    font-weight: bold;
+}
+
+
+nav > a:active {
+    color: var(--cor001);
+}
+
+main {
+    font-family: var(--fonte2);
+    padding: 10px;
+    margin: auto;
+    margin-top: 0px;
+    min-width: 320px;
+    max-width: 1200px;
+}
+
+body {
+    background: var(--cor002) url("imagens/wallpaper004.jpg") center center no-repeat fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+     
+}
+
+article {
+    background-color: var(--cor003);
+    padding: 20px;
+    box-shadow: -2px 2px 8px rgba(0, 0, 0, 0.356);
+} 
+
+article > aside {
+    font-style: italic;
+    font-size: 12px;
+    padding: 0px 10px 0px 10px;
+    margin: -5px;
+}
+
+fieldset {
+    width: 100% - 20px;
+    display: block;
+    font-family: "Open Sans";
+    font-size: 16px;
+    margin: auto;
+    margin-top: 20px;
+    flex-direction: column;
+}
+
+fieldset > legend {
+    font-family: var(--fonte1);
+    font-weight: bold;
+}
+
+fieldset > .enviar {
+    font-family: var(--fonte2);
+    font-weight: bolder;
+    margin-top: 10px;
+    background-color: rgba(0, 0, 0, 0.925);
+    color: white;
+    width: 100px;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+fieldset > .enviar:hover {
+    background-color: rgba(255, 255, 255, 0.466);
+    color: rgb(0, 0, 0);
+    transition-duration: 0.5s;
+}
+
+
+.nome_funcionalidade {
+    width: 100% - 10px;
+    margin: 5px;
+    padding: 2px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.356);
+    border: 0px;
+}
+
+.data_cadastro {
+    width: 200px;
+    margin: 5px;
+    text-align: left;
+    padding: 2px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.356);
+    border: 0px;
+}
+
+.descricao {
+    display: block;
+}
+
+textarea {
+    width: 28em;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.356);
+}
+
+#assinatura {
+    text-align: right;
+    margin: 5px;
+}
+
+article > p {
+    text-indent: 30px;
+    line-height: 2.2em;
+}
+
+p {
+    text-align: justify;
+}
+
+img#tecno {
+    width: 100%;
+    box-shadow: 4px 5px 10px rgba(0, 0, 0, 0.363);
+}
+
+div.video {
+    margin-top: 5px;
+    margin-bottom: 50px;
+    padding-bottom: 50%;
+    position: relative;
+}
+
+div.video > iframe {
+    position: absolute;
+    top:2%;
+    left:0;
+    width:100%;
+    height:100%;
+}
+
+div#imagem {
+    background: darkgray url("imagens/pexels-josh-sorenson-1714208.jpg") center center no-repeat fixed;
+    background-size: cover;
+    height: 500px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+div#imagem > p {
+    color: white;
+    font-size: 3em;
+    font-weight: bold;
+    font-family: var(--fonte1);
+    text-align: center;
+    text-shadow: 2px 2px 2px black;
+    position: absolute;
+    left: 50%;
+    top: 342%;
+    transform: translate(-50%, -0%);
+}
+
+footer {
+    font-family: var(--fonte2);
+    font-size: 16px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+}
+
+footer > p {
+    text-align: center;
+    margin: 0px;
+}
