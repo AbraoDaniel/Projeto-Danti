@@ -211,15 +211,16 @@ div#imagem {
 
 div#imagem > p {
     color: white;
-    font-size: 3em;
+    font-size: 2.5em;
     font-weight: bold;
     font-family: var(--fonte1);
     text-align: center;
     text-shadow: 2px 2px 2px black;
-    position: absolute;
+    padding: 10px;
+    position: relative;
     left: 50%;
-    top: 342%;
-    transform: translate(-50%, -0%);
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 footer {
